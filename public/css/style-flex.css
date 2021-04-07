@@ -109,10 +109,11 @@ img {
     margin: 0 auto;
     padding: 60px 0px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sobre-info {
-    flex: 2;
+    flex: 2 1 300px;
     margin: 0 10px;
 }
 
@@ -126,4 +127,52 @@ img {
     line-height: 1.4;
     margin-bottom: 1em;
     color: #7c7c7c;
+}
+
+.sobre-img {
+    /* o flex-basis muda o comportamento das imagens ao deminuirmos a tela */
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+/* Portfolio */
+
+.portfolio {
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.portfolio h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.portfolio-item {
+    flex: 1 1 175px;
+    margin: 10px;
+}
+
+.portfolio-item h2 {
+    font-size: h2;
+    color: #a4a4a4;
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+}
+
+.html-css {
+    border-top: 8px solid rgb(255, 136, 0);
+}
+
+.javascript {
+    border-top: 8px solid rgb(229, 255, 0);
+}
+
+.node {
+    border-top: 8px solid rgb(39, 199, 60);
 }
